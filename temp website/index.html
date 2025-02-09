@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADUGREEN.COM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> <!-- Typewriter font -->
+  <style>
+    body {
+      font-family: 'Courier Prime', monospace;
+      background-color: black;  /* Black background */
+      color: white;  /* White text */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .logo {
+      width: 150px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .typewriter {
+      font-size: 2em;
+      color: white;  /* White text */
+      border-right: 3px solid white;  /* White cursor */
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+      margin-bottom: 30px;  /* Add margin below text */
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      background-color: black;  /* Black button */
+      color: white;  /* White text */
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      border: 2px solid white; /* Optional: White border for button */
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #333;  /* Darker black on hover */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .typewriter {
+        font-size: 1.5em;
+      }
+
+      .cta-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+      }
+
+      .logo {
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .typewriter {
+        font-size: 1.2em;
+      }
+
+      .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/White.PNG" alt="Store Logo" class="logo"> <!-- Your logo image here -->
+  </header>
+  <div class="content">
+    <div class="typewriter">Good To Smell You Again!</div>
+    <a href="https://paystack.shop/adu" class="cta-button">Shop Now</a> <!-- Replace with your product page link -->
+  </div>
+</body>
+</html>
